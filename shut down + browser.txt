@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<windows.h>
+ 
+int main()
+{
+   char ch;
+ 
+   printf("\n\n\tDo you want to shutdown your computer now (y/n) : ");
+   scanf("%c", &ch);
+ 
+   if (ch == 'y' || ch == 'Y')
+      system("\n\n\tC:\\WINDOWS\\System32\\shutdown -s");
+    else if (ch == 'n' || ch == 'N')
+    system("\n\n\texplorer http://www.google.com");
+   return 0;
+}
